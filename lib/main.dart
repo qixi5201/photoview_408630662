@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: '瀏覽影像',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.blueGrey,
       ),
       home: MyHomePage(),
     );
@@ -23,7 +23,7 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     // 建立 AppBar
     final appBar = AppBar(
-      title: Text('瀏覽影像'),
+      title: Text(''),
     );
     const images = <String>[
       'assets/img1.jpg',
@@ -35,11 +35,12 @@ class MyHomePage extends StatelessWidget {
       'assets/img7.jpg',
       'assets/img8.jpg',
     ];
-    imageCache.clear();
     final gallery = _PhotoViewGalleryWrapper(
       GlobalKey<_PhotoViewGalleryWrapperState>(),
-      images, BoxDecoration(color: Colors.white,),
-      0, 0.6, 1.2, Axis.horizontal,
+      images, BoxDecoration(color: Colors.black
+    ),
+      0, 0.6, 1.2,
+      Axis.horizontal,
     );
 
     final appHomePage = Scaffold(
