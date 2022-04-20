@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(MyApp());
-  class MyApp extends StatelessWidget {
+void main() => runApp(MyApp1());
+  class MyApp1 extends StatelessWidget {
 
   // This widget is the root of your application.
   @override
@@ -46,35 +46,99 @@ void main() => runApp(MyApp());
               children: <Widget>[
                 Container(
                   padding: const EdgeInsets.all(8),
-                      child:Image.asset(image[0]),
+                  child:GestureDetector(
+                    onTap: ()=>Navigator.of(context).push(MaterialPageRoute(
+                        builder: (context) =>  Center(
+                          child:Image.asset(image[0]),
+                        ),
+                    ),
                   ),
+                    child: Image.asset(image[0]),
+                  ),
+      ),
                 Container(
                   padding: const EdgeInsets.all(8),
-                  child: Image.asset(image[1]),
+                  child:GestureDetector(
+                    onTap: ()=>Navigator.of(context).push(MaterialPageRoute(
+                      builder: (context) =>  Center(
+                        child:Image.asset(image[1]),
+                      ),
+                    ),
+                    ),
+                    child: Image.asset(image[1]),
+                  ),
                 ),
                 Container(
                   padding: const EdgeInsets.all(8),
-                  child: Image.asset(image[2]),
+                  child:GestureDetector(
+                    onTap: ()=>Navigator.of(context).push(MaterialPageRoute(
+                      builder: (context) =>  Center(
+                        child:Image.asset(image[2]),
+                      ),
+                    ),
+                    ),
+                    child: Image.asset(image[2]),
+                  ),
                 ),
                 Container(
                   padding: const EdgeInsets.all(8),
-                  child: Image.asset(image[3]),
+                  child:GestureDetector(
+                    onTap: ()=>Navigator.of(context).push(MaterialPageRoute(
+                      builder: (context) =>  Center(
+                        child:Image.asset(image[3]),
+                      ),
+                    ),
+                    ),
+                    child: Image.asset(image[3]),
+                  ),
                 ),
                 Container(
                   padding: const EdgeInsets.all(8),
-                  child: Image.asset(image[4]),
+                  child:GestureDetector(
+                    onTap: ()=>Navigator.of(context).push(MaterialPageRoute(
+                      builder: (context) =>  Center(
+                        child:Image.asset(image[4]),
+                      ),
+                    ),
+                    ),
+                    child: Image.asset(image[4]),
+                  ),
                 ),
                 Container(
                   padding: const EdgeInsets.all(8),
-                  child: Image.asset(image[5]),
+                  child:GestureDetector(
+                    onTap: ()=>Navigator.of(context).push(MaterialPageRoute(
+                      builder: (context) =>  Center(
+                        child:Image.asset(image[5]),
+                      ),
+                    ),
+                    ),
+                    child: Image.asset(image[5]),
+                  ),
                 ),
                 Container(
                   padding: const EdgeInsets.all(8),
-                  child: Image.asset(image[6]),
+                  child:GestureDetector(
+                    onTap: ()=>Navigator.of(context).push(MaterialPageRoute(
+                      builder: (context) =>  Center(
+                        child:Image.asset(image[6]),
+                      ),
+                    ),
+                    ),
+                    child: Image.asset(image[6]),
+                  ),
                 ),
                 Container(
                   padding: const EdgeInsets.all(8),
-                  child: Image.asset(image[7]),
+                  child:GestureDetector(
+                    onTap: ()=>Navigator.of(context).push(MaterialPageRoute(
+                      builder: (context) =>  Center(
+                        child:Image.asset(image[7]),
+                      ),
+                    ),
+                    ),
+                    child: Image.asset(image[7]),
+                  ),
                 ),
               ],
             ),
@@ -88,4 +152,3 @@ void main() => runApp(MyApp());
       return appHomePage;
     }
   }
-
